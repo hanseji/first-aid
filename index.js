@@ -40,9 +40,6 @@ restService.post("/echo", function(req, res) {
                 items: [
                   {
                     title: echoText,
-                    openUrlAction: {
-                      url: "https://example.com"
-                    },
                     description: "Description of item 1",
                     footer: "Item 1 footer",
                     image: {
@@ -87,9 +84,6 @@ restService.post("/echo", function(req, res) {
                 items: [
                   {
                     title: echoText,
-                    openUrlAction: {
-                      url: "https://example.com"
-                    },
                     description: "Description of item 1",
                     footer: "Item 1 footer",
                     image: {
