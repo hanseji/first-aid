@@ -72,11 +72,50 @@ restService.post("/echo", function(req, res) {
   };
   
   return res.json({
-    payload: speechResponse,
-    //data: speechResponse,
-    fulfillmentText: speech,
-    speech: speech,
-    displayText: speech,
+    payload: {
+      google: {
+        expectUserResponse: true,
+        richResponse: {
+          items: [
+            {
+              simpleResponse: {
+                textToSpeech: "Here's an example of a browsing carousel."
+              }
+            },
+            {
+              carouselBrowse: {
+                items: [
+                  {
+                    title: echoText,
+                    openUrlAction: {
+                      url: "https://example.com"
+                    },
+                    description: "Description of item 1",
+                    footer: "Item 1 footer",
+                    image: {
+                      url: "https://storage.googleapis.com/actionsresources/logo_assistant_2x_64dp.png",
+                      accessibilityText: "Image alternate text"
+                    }
+                  },
+                  {
+                    title: "Title of item 2",
+                    openUrlAction: {
+                      "url": "https://example.com"
+                    },
+                    description: "Description of item 2",
+                    footer: "Item 2 footer",
+                    image: {
+                      url: "https://storage.googleapis.com/actionsresources/logo_assistant_2x_64dp.png",
+                      accessibilityText: "Image alternate text"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
     source: "webhook-echo-sample"
   });
 });
