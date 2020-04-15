@@ -37,7 +37,7 @@ restService.post("/echo", function(req, res) {
             },
           {
             "basicCard": {
-              "title": "Title: this is a title",
+              "title": echoText",
               "subtitle": "This is a subtitle",
               "formattedText": "This is a basic card.  Text in a basic card can include \"quotes\" and\n    most other unicode characters including emojis.  Basic cards also support\n    some markdown formatting like *emphasis* or _italics_, **strong** or\n    __bold__, and ***bold itallic*** or ___strong emphasis___ as well as other\n    things like line  \nbreaks",
               "image": {
