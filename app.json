@@ -3,7 +3,7 @@
   "description": "Webhook echo sample",
   "version": "1.0.0",
   "repository": "https://github.com/SunilSyal/Webhook-and-API.AI-Samples.git",
-  "keywords": ["api.ai", "dialogflow", "natural language"]
+  "keywords": ["api.ai", "dialogflow", "natural language"],
   "main": "node index.js",
   "scripts": {
     "start": "node index.js"
