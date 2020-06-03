@@ -58,6 +58,6 @@ restService.post("/video", function(req, res) {
 });
 */
 
-restService.listen(process.env.PORT || 3000, function() {
+restService.listen(process.env.PORT || 8080, function() {
   console.log("Server up and listening");
 });
