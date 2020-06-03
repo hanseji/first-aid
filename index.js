@@ -1,5 +1,8 @@
 "use strict";
 
+var secret  = 'test'; // secret key of the webhook
+var port    = 8080; // port
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const restService = express();
